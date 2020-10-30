@@ -5,7 +5,7 @@ subtitle: React, Express, React, and Node create a beautiful child
 comments: true
 ---
 
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+This is my most complex coding project. It's a full-stack MERN app (MERN stands for MongoDB/Express/React/Node) that lets you create outrageous, hilarious stories with friends. Want to just see the app? You'll find it [here](https://secret-wildwood-99621.herokuapp.com/). Just keep in mind that, to really test it out, you'll need at least one friend to play with you! If you want to read more about how I built it and its technical capabilities, read on.
 
 **Here is some bold text**
 
