@@ -18,9 +18,9 @@ encoding: UTF-8
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - LinkedIn: "https://www.linkedin.com/in/tom-rains-180362b8"
+    - Writing Blog: "https://www.tomrains.me"
+  Author's home: "https://tomrains.github.io"
 
 # --- Logo --- #
 
