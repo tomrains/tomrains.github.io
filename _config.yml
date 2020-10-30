@@ -18,15 +18,15 @@ encoding: UTF-8
 navbar-links:
   About Me: "aboutme"
   Resources:
+    - Coding Projects: "projects"
     - LinkedIn: "https://www.linkedin.com/in/tom-rains-180362b8"
     - Writing Blog: "https://tomrains.me/2017/02/21/my-apartment-is-69-square-feet/"
-    - Other Projects: "projects"
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/toms_pic.jpg"
+avatar: "/assets/img/picOfTom.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
