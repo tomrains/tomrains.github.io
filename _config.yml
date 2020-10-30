@@ -6,10 +6,12 @@
 # --- Required options --- #
 
 # Name of website
-title: Coding from Tom
+title: Tom's Coding Projects
 
 # Your name to show in the footer
-author: Some Person
+author: Tom Rains
+
+encoding: UTF-8
 
 # --- List of links in the navigation bar --- #
 
