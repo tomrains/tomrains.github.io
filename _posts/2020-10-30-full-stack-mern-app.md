@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Full-Stack MERN App
-subtitle: React, Express, React, and Node create a titillating party ganme
+subtitle: React, Express, React, and Node create a titillating party game
 comments: true
 ---
 
