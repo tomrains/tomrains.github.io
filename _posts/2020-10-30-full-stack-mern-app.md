@@ -25,7 +25,8 @@ I'm so glad you asked. The answer is _yes._ If you don't want to read this, scro
 
 Let's go through the letters of MERN to outline what the app can do and why.
 
-**M** _(MongoDB/Mongoose)_
+### M 
+**_(MongoDB/Mongoose)_**
 Because the Story Game involves several people communicating with each other on different devices, there needs to be a backend. The word "backend" strikes fear in the hearts of many coders teaching themselves. It was definitely frustrating to learn at first, and it took a lot of research to figure out, but it doesn't need to be so scary. MongoDB is learnable, and Mongoose makes it even better. The hardest, most hair-pulling part for me was installing and setting up MongoDB. 
 
 I read once in an article that it's helpful when building a full-stack app to think of it as two separate apps: the frontend and the backend. I found this helpful, so that's how I'll discuss this backend for now.
