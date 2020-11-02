@@ -78,6 +78,54 @@ This part is me trying to show off what I made Express do. If you don't care abo
 **Join**
 * Player attempts to join the game. If the game doesn't exist or it's already mid-game, the player is given an error message and can return to the homepage. If successful, the player receives relevant game info to store in the front end and is directed to the Waiting Room.
 
+### R
+**_(React)_**
+
+**add more description here!**
+
+#### React components
+* Components: Components are the building blocks of React. I outline my major components below.
+* App.js: This is the most top-level component. It is the parent to five other components: HomeScreen, Join, Waitscreen, WritingPaper, and StoryRevealed. It contains state that is needed in more than one component and several functions, including functions that reset certain states upon reloads, update player and game info, or start the game.
+* HomeScreen.js: This is the main page of the app. From it, players can create a game. When the component mounts, it creates a game in the backend. The components has functions to update the player's name, avatar, and number of rounds for the game. This information is stored in the backend and frontend. A help button when clicked displays a modal that explains the purpose of the Story Game. If a player has recently played a game and enters this page, some state is reset.
+* Join.js: The host uses an invite link to get friends to join the game. When a player uses the invite link, it takes them to the Join.js page. The frontend grabs the 4-letter game code from the URL before asking the backend to see if the corresponding game exists. When the page mounts, it makes a call to the backend to make sure the game in the URL exists and hasn't yet started. If it doesn't exist or has already started, it gives an error message and prompts the user to return to the homepage. If the game exists and hasn't started, the player enters their name, selects an avatar, and joins the waiting room. Their info is stored in the backend.
+* WaitScreen.js: If a player has recently played a game and enters this page, some state is reset. This page makes a periodic call to the backend to see which players are in the game and displays them. Players who joined, like the host, can send a link to friends to have them join. The host can see who has joined before deciding to start the game. This alters some backend information and sends a message to the other players that it's time to get writing! Some dandy code immediately copies the join URL text when a player hits the Copy URL button. When this component unmounts, it stops querying the backend periodically for the players. When the host clicks start and the other players click Begin Writing, React-Router-Dom takes them to the writing portion of the app.
+* WritingPaper.js: This component has the most complex functionality. Indented bullets time!
+  * Each player has a form box with a 150 character limit to write their story. As a player types, state updates so it knows how much a player has left to write. A blue progress bar fills up as it approaches 135 characters (the minimum required). If a player tries to type more than 150 characters, they'll find they're unable to.
+  * After the first round, the player is able to see approximately the last 50 characters of a story submitted by another player (The frontend uses code that finds the first full word 50 characters or more from the end of the story and displays all text after that). This gives the player some clue as to what the previous player was writing about, and lets them keep writing the story seamlessly, but there isn't enough context for the story to make sense (that's how you get a bunch of weird stories at the end).
+  * If there are 3 or more players, the host sees an active Remove Players button. This is helpful if a player needs to quit or loses Internet connection or their phone dies. It removes them from the game and modifies the backend so that everyone else is able to keep playing seamlessly. If there are 2 players, the host sees the Remove Players button, but it's disabled. This page also has a Help button that opens a modal that explains how to play the game.
+  * When the component mounts, a listener function is activated. This is used later to see if everyone else has submitted their story for that round to the backend. 
+  * When a player has submitted their story, the frontend makes a call to the backend to see who's still working. If people are still working, the player receives a list of these people. For example, "Jade and Greg are still working on their story."
+When everyone but 1 player has submitted their story for the round, the front-end randomly chooses a snarky but lighthearted line to display. For example, "Just waiting on Brad to finish their story. Bless their heart."
+  * Once everyone has submitted their story for the round, the frontend makes a call to the backend for the new story. The backend takes into account the round, player ID, and which players have been deleted before passing on a new story to each player. Players receive their stories, and the frontend updates to reflect the new round.
+  * The frontend keeps track of what round it is, so it knows when it's the last round. After submitting for the last round, and receiving news that everyone has finished, the frontend makes a call to the backend for the finalStory. The backend takes into account the player number and which players have been deleted (if any) when deciding how to chain the final stories together.
+  * Once a player receives their final story (a joint production with several players' contributions changed together), they see a button that says "Read Final Story." In the traditional, non-digital Story Game, players keep their stories turned over until it's their turn to read them aloud. For that reason, I included this button that players have to press before revealing their story.
+* StoryRevealed.js: This component is simple. Players see their final story so they can read it aloud to everyone. (If you're playing remotely, Zoom is a good option for this). Players have the option to copy their story to save for later and to start a new game.
+
+#### React tools and packages
+* Create-React-App: I used this handy package to create a React skeleton. I recommend this to anyone new to React who wants an easy setup.
+* React-Router-Dom: Users easily navigate from page to page thanks to React-Router-Dom.
+* React Developer tools: This is an incredible tool - I don't know how I could build any React application without it. It's like Google Developer Tools, except you can inspect elements and see the actual React componenents, how they're nested, and their state and props. Absolute must-have for debugging and visualizing your app's structure.
+* React-Simple-Storage: This simple and wonderful package maintains the state of the page when refreshing or leaving and returning. For state that I didn't want to maintain on a page refresh or when revisiting, I was able to use a special function in componentDidMount.
+* Emoji-Picker-React: I used this wonderful package to let users choose an emoji to represent them. It uses React Hooks, which were fun to learn about. I had to research them a bit before being able to use this package effectively.
+
+### N
+**_(Node)_**
+
+There's not too much to say about Node. It basically lets you run Javascript on your computer outside of a browser. So ... yeah. I promise I'm not just phoning it in because this is the last letter in MERN and I'm tired of writing. Here's some stuff related to Node I used, though:
+* Npm: I used npm to install packages and run the server. I've typed "npm run dev" more than I can count.
+* Concurrently: Concurrently lets you run multiple commands at the same time. When I run "npm run dev," this actually sets off two commands: one to get the frontend going, and another to get the backend going (remember earlier I said it helps to think of the frontend and backend as two separate applications - here's another case where this holds true. It takes different things to get the frontend and backend up on your local server).
+* Nodemon: Nodemon automatically restarts your application when you make changes. A true lifesaver.
+
+### S
+**_(Stuff)_**
+
+Okay, there is no S in MERN, but I'm adding and S in MERN and making it MERNS because so many other technologies (STUFF!) that helped me make this app! I know I'll forget some, but here are some of my favorite:
+
+* Postman: This gem of a program lets you test your Express routes. This is great because you don't need to have your frontend set up to test them. Just build them in the backend, and see if they work. Then you can tie them in to the frontend and test them there. I love Postman.
+* Google: I've read many a time that one of the top, if not THE top skill a programmer must learn, is how to Google things. I only half-believed this when I started coding, but it's so true. Almost everything is on Google. Part of me wants to believe I'm a special snowflake and my problem is unique, but that's literally never been the case. When you're stuck, head to Google. The more you Google, the better you'll get at it. 
+* Udemy: When I got stuck and wanted to bang my head against a wall, I went to Udemy for answers. I'm naturally extremely stingy and don't want to spend $12 on a class, even if it's 10 to 40 hours of content. But saving 10 hours of head-banging frustration in exchange for $12 is so worth it. My favorite class was on how to deploy an app to Heroku. This was truly a lifesaver. I might still be trying to figure out how to deploy without it.
+
+
 ## Can you show me how to make an app?
 Yes. Just contact me via email or phone. I love helping people learning to code.
 - Email: tomrainswrites@gmail.com
