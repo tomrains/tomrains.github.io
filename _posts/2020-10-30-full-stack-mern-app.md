@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Full-Stack MERN App
-subtitle: React, Express, React, and Node create a titillating party game
+subtitle: MongoDB, Express, React, and Node join forces to create a titillating party game
 comments: true
 ---
 
 ## So what is this app, anyway?
-My [full-stack MERN app](https://secret-wildwood-99621.herokuapp.com/) is based on an old-school pen and paper activity called the Story Game. This digital version lets you:  
+My <a href="https://secret-wildwood-99621.herokuapp.com/" target="_blank">full-stack MERN app</a> is based on an old-school pen and paper activity called the Story Game. This digital version lets you:  
 * Create outrageous, hilarious stories with friends
 * Play either remotely or together (with your faces in your smartphones)
 You'll need at least one friend to help you test the app out. If you want to learn more about how I built it and its technical capabilities, read on.
