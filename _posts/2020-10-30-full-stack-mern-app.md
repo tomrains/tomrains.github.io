@@ -57,7 +57,7 @@ Well, this secretary, let's call her Anna, has strict protocol you must adhere t
 In this app, players can make several different types of requests. The most basic is a GET request, exactly what it sounds like. You are GETTING information from the backend. You don't need the big boss to update anything, you just want to know what's up. I'll talk about these first, because they're the simplest.
 
 When a player joins the waiting room, the frontend is programmed to periodically make GET requests to the backend asking what other players have joined the game. Now, remember when I told you how strict Anna is? If you are trying to make this exact request, you MUST ask it in the following way:
-    axios.get(api/players/${this.props.gameId}/player) _(Axios is a tool that helps us make requests)_
+* ``axios.get(`api/players/${this.props.gameId`}/player)`` _(Axios is a tool that helps us make requests)_
 
 #### Okay, Express is the strict secretary. How does it work in this app?
 
