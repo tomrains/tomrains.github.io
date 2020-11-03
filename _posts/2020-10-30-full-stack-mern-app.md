@@ -46,24 +46,28 @@ Mongoose creates these useful models, and MongoDB stores all the information. Th
 ### E
 **_(Express)_**
 
-Note: If you literally do not care about how Express works and don't want to hear me explain it, and you just want to know what Express did for me in this app, scroll down to the [in-depth discussion](#ExpressDiscussion) of what each Express route in the game has/does.
+#### How does Express work?
+ MongoDB and Mongoose help you hold information in the backend. But how do we talk to the backend from the frontend? This is where Express comes in. 
+ 
+#### Extended metaphor time (Is Express MongoDB's secretary?)
+Think of it this way: MongoDB is the big guy in the back who has his head down at his desk and doesn't like to be disturbed. For that reason, he has a strict, tough-as-nails secretary you must speak to first. Why do I say she's strict?
 
-Okay, so MongoDB and Mongoose help you hold information in the backend. But how do we talk to the backend from the frontend? This is where Express comes in. I like to think of Mongo as the big guy in the back who has his head down at his desk and doesn't like to be disturbed. He doesn't want just anyone sauntering into his office and making a request. For that reason, he has an extremely strict secretary you must speak to first. Why do I say she's strict?
+Well, this secretary, let's call her Anna, has strict protocol you must adhere to. Want to ask the boss a question? You must follow exact guidelines, or Anna rejects the question. Need the boss to update some data? Follow the strict protocol, or Anna, again, will completely reject your request. She'll tell you why (that's the good part), but the request won't go through to the big guy.
 
-Well, this secretary, let's call her Anna, she has strict protocol you must adhere to. Want to ask the boss a question? It must follow exact guidelines, or Anna rejects it. Need the boss to update some data? Follow the strict protocol, or Anna, again, will completely reject your request. She'll tell you why (that's the good part), but the request won't go through to the big guy.
-
-Okay, enough metaphor. Let's talk about how Express actually works in this app. From the frontend (the players on their phones), several different types of requests can be made. The first is a GET request, exactly what it sounds like. You are GETTING information from the backend. You don't need the big boss to update anything, you just won't to know what's up. I'll talk about these first, because they're the simplest.
+In this app, players can make several different types of requests. The most basic is a GET request, exactly what it sounds like. You are GETTING information from the backend. You don't need the big boss to update anything, you just want to know what's up. I'll talk about these first, because they're the simplest.
 
 When a player joins the waiting room, the frontend is programmed to periodically make GET requests to the backend asking what other players have joined the game. Now, remember when I told you how strict Anna is? If you are trying to make this exact request, you MUST ask it in the following way:
-* axios.get(`api/players/${this.props.gameId}/player`) (_Axios is a tool that helps us make requests_)
+* `axios.get(`api/players/${this.props.gameId}/player`)` _(Axios is a tool that helps us make requests)_
+
+#### Okay, Express is the strict secretary. How does it work in this app?
 
 What does this mean exactly? It means that if you don't include the exact formula when requesting this information, you'll be rejected. Or, even worse, you'll get wrong info if Anna thinks you're actually asking for something other than you're asking. In other words, you must be requesting from the players route, and including the gameId and the word "player", in that order. Anna, or in this case Express, first goes to the route "players", then looks for a matching request protocol. Once she finds the matching one listed above, goes through the code and does precisely what it tells her to do. In this case, she notes the gameID, let's say it's "YOLO," and asks the big boss (Mongo) to look into game YOLO. Then she tells him he needs to loop through YOLO's player array and prepare that into a format the requester can understand. Once the big boss has a list of all the players in the game YOLO, Anna sends the requester a response back. If there's an error along the way, she exits from the tasks completely and sends the requester an error message.
 
 #### A note on routes
 Anna has a lot of Express paths she has to keep track of. For that reason, she has them separate into tidy piles on her desks. One is for requests related to players, another for games, one for stories, and a final one exclusively for when a player joins a game. If you haven't realized, Anna is really just me. The point of having these different piles (called routes when they're used in Express code) is a way to keep your code clean and find what you need fast. I have as few as one or as many as four request options within each route. This just helps me stay organized and find the route I want quickly - it isn't strictly necessary. But imagine Anna looking through all the papers just to find one particular type of route requests - it's easier to have 4 piles.
 
-#### In-depth discussion of what each Express route in the game has/does<a name="ExpressDiscussion"></a>
-This part is me trying to show off what I made Express do. If you don't care about the level of technical detail, skip to the next question.
+#### In-depth documentation on the app's Express routes<a name="ExpressDiscussion"></a>
+This part is me trying to show off what I made Express do in this app. If you don't care about the level of technical detail (I can't blame you), skip to the next question.
 **Games**
 * When a player visits the home page, a function in componentDidMount automatically creates a new game in the backend with basic info, including the game code and link.
 * The host can update the number of rounds in a game.
