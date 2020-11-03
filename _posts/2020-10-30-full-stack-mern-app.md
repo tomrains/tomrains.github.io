@@ -68,7 +68,7 @@ Anna has a lot of Express paths she has to keep track of. For that reason, she k
 This part is me trying to show off what I made Express do in this app. If you don't care about the level of technical detail (I can't blame you), skip to the next question.
 
 **Games**
-* When a player visits the home page, a function in componentDidMount automatically creates a new game in the backend with basic info, including the game code and link.
+* ``axios.get(`api/games/add`)``: When a player visits the home page, a function in componentDidMount automatically creates a new game in the backend with basic info, including the game code and link.
 * The host can update the number of rounds in a game.
 * The host starts the game. This creates arrays in the backend that track who has submitted, who hasn't, and what the submitted stories are. This also lets the backend know the game has started and to not accept any new players.
 
