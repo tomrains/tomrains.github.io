@@ -46,7 +46,7 @@ Mongoose creates these useful models, and MongoDB stores all the information. Th
 ### E
 **_(Express)_**
 
-Note: If you literally do not care about how Express works and don't want to hear me explain it, and you just want to know what Express did for me in this app, scroll down to In-depth discussion of what each Express route in the game has/does. **(link this later)**
+Note: If you literally do not care about how Express works and don't want to hear me explain it, and you just want to know what Express did for me in this app, scroll down to the [in-depth discussion](#ExpressDiscussion) of what each Express route in the game has/does.
 
 Okay, so MongoDB and Mongoose help you hold information in the backend. But how do we talk to the backend from the frontend? This is where Express comes in. I like to think of Mongo as the big guy in the back who has his head down at his desk and doesn't like to be disturbed. He doesn't want just anyone sauntering into his office and making a request. For that reason, he has an extremely strict secretary you must speak to first. Why do I say she's strict?
 
@@ -62,7 +62,7 @@ What does this mean exactly? It means that if you don't include the exact formul
 #### A note on routes
 Anna has a lot of Express paths she has to keep track of. For that reason, she has them separate into tidy piles on her desks. One is for requests related to players, another for games, one for stories, and a final one exclusively for when a player joins a game. If you haven't realized, Anna is really just me. The point of having these different piles (called routes when they're used in Express code) is a way to keep your code clean and find what you need fast. I have as few as one or as many as four request options within each route. This just helps me stay organized and find the route I want quickly - it isn't strictly necessary. But imagine Anna looking through all the papers just to find one particular type of route requests - it's easier to have 4 piles.
 
-#### In-depth discussion of what each Express route in the game has/does
+#### In-depth discussion of what each Express route in the game has/does<a name="ExpressDiscussion"></a>
 This part is me trying to show off what I made Express do. If you don't care about the level of technical detail, skip to the next question.
 **Games**
 * When a player visits the home page, a function in componentDidMount automatically creates a new game in the backend with basic info, including the game code and link.
