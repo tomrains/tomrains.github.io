@@ -8,7 +8,8 @@ comments: true
 ## So what is this app, anyway?
 My <a href="https://secret-wildwood-99621.herokuapp.com/" target="_blank">full-stack MERN app</a> is based on an old-school pen and paper activity called the Story Game. This digital version lets you:  
 * Create outrageous, hilarious stories with friends
-* Play either remotely or together (with your faces in your smartphones)
+* Play remotely or together (with your faces in your smartphones).  
+
 You'll need at least one friend to help you test the app out. If you want to learn more about how I built it and its technical capabilities, read on.
 
 ## How did you make the app?
