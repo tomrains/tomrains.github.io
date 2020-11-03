@@ -29,14 +29,19 @@ Let's go through the letters of MERN to outline what the app can do and why.
 ### M 
 **_(MongoDB/Mongoose)_**
 
-Because the Story Game involves several people communicating with each other on different devices, there needs to be a backend. The word "backend" strikes fear in the hearts of many coders teaching themselves. It was definitely frustrating to learn at first, and it took a lot of research to figure out, but it doesn't need to be so scary. MongoDB is learnable, and Mongoose makes it even better. The hardest, most hair-pulling part for me was installing and setting up MongoDB. 
+#### What are MongoDB and Mongoose?
+MongoDB and Mongoose are backend tools. MongoDB is a backend database. Mongoose creates these things called "models," which are basically creating templates for data you'll make over and over again. 
 
-I read once in an article that it's helpful when building a full-stack app to think of it as two separate apps: the frontend and the backend. I found this helpful, so that's how I'll discuss this backend for now.
+#### Why does this app need a backend?
+Because the Story Game involves several people communicating with each other on different devices, there needs to be a backend. The word "backend" strikes fear in the hearts of many self-taught coders, including me circa 2019. It was definitely frustrating to learn at first, and it took a lot of research to figure out, but it doesn't need to be scary. MongoDB is learnable, and Mongoose makes it even better. The hardest, most hair-pulling part for me was installing and setting up MongoDB. 
 
-MongoDB is a backend database. Mongoose creates these things called "models," which are basically shortcuts to creating templates for things you'll make over and over again. For example, I know there will be multiple players I need to store in the backend, so I might as well create a template that makes it easy for players to be created. What I _don't_ need to do is say "Okay, what do I need to create a player. A name ... and I guess a number ... and I guess a unique ID ..." No. I only do that once, when I make the model. Still not making sense? I'll talk a bit more about what models I made below.
-* **Player:** The Player model I created is stored within the Game model. The player model has the player's name, avatar and player number. This is different from the player ID, which Mongoose creates automatically. The ID is helpful for confirming a player's identity, while the player number (0 for the host, 1 for the next player, 2 for the next, and so on) is useful for story passing logic.
-* **Game:** When a player makes a request for a game to be created, Mongoose sets up a game in the backend using the Game model. This includes a code, rounds, currentRound, gameStarted, game_completed, players, originalPlayers, deletedPlayersNumbers, removablePlayers, storyBeginningsNotReturned, playerDeleted boolean, storiesSubmitted, storiesReturned, storyTexts, and doesGameExist
-* **Story:** This was originally created to store inside the Player model, until I realized it made more sense to store in the Game model. Coding is all about being flexible and moving on from an idea you had previously that doesn't make sense anymore (some might call this being agile). You might have to change tack if you plan ahead before jumping into writing code. This is something I still struggle with, partially because banging out the code feels like working, and the planning doesn't (but it is!).
+#### How I used MongoDB and Mongoose
+I created 3 different models for the Story Game. Here's a breakdown of each one:
+* **Game:** When a player makes a request for a game to be created, Mongoose sets up a game in the backend using the Game model. This includes the following information slots all ready to go: game code, number of rounds, current round, whether the game has started, list of current players, list of all player who joined (including deleted players), deleted player information, which players can be deleted, which stories have been disrupted due to players leaving, whether any players have left, which stories have been submitted for which rounds, which stories have been returned for which rounds, the texts of the stories, and whether or not the game exists (surprise, it always does). _That's a lot of information!_ Mongoose lets me choose the type of input, too, whether it be a boolean, string, array, number, etc.
+* **Player:** The Player model I created is stored within the Game model. The player model has the player's name, avatar and player number. This is different from the player ID, which MongoDB creates automatically. The ID is helpful for confirming a player's identity, while the player number (0 for the host, 1 for the next player, 2 for the next, and so on) is useful for story passing logic.
+* **Story:** This was originally created to store inside the Player model, until I realized it made more sense to store in the Game model. Coding is all about being flexible and moving on from an idea you had previously that doesn't make sense anymore (some might call this being agile). You might have to change tack more if you don't plan ahead before jumping into writing code. This is something I still struggle with, partially because banging out the code feels like working, and the planning doesn't (even though it is!).
+
+Mongoose creates these useful models, and MongoDB stores all the information. This is key to allowing players to communicate with each other.
 
 ### E
 **_(Express)_**
@@ -126,8 +131,10 @@ Okay, there is no S in MERN, but I'm adding and S in MERN and making it MERNS be
 * **Google:** I've read many a time that one of the top, if not THE top skill a programmer must learn, is how to Google things. I only half-believed this when I started coding, but it's so true. Almost everything is on Google. Part of me wants to believe I'm a special snowflake and my problem is unique, but that's literally never been the case. When you're stuck, head to Google. The more you Google, the better you'll get at it. 
 * **Udemy:** When I got stuck and wanted to bang my head against a wall, I went to Udemy for answers. I'm naturally extremely stingy and don't want to spend $12 on a class, even if it's 10 to 40 hours of content. But saving 10 hours of head-banging frustration in exchange for $12 is so worth it. My favorite class was on how to deploy an app to Heroku. This was truly a lifesaver. I might still be trying to figure out how to deploy without it.
 
-
 ## Can you show me how to make an app?
 Yes. Just contact me via email or phone. I love helping people learning to code.
 - **Email:** tomrainswrites@gmail.com
 - **Phone:** (918) 933-9899
+
+## Can I hire you?
+Kindly do. Email or text me.
