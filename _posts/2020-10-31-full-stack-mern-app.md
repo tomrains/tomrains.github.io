@@ -90,10 +90,17 @@ This part is me trying to show off what I made Express do in this app. If you do
 ### R
 **_(React)_**
 
-**add more description here!**
+We've focused mainly on the backend here. What about the frontend? How do we create that? Step in, React.
+
+I absolutely love React. After being blown away by what vanilla JavaScript and Github Pages could do together, I decided it was time to learn a JavaScript library. Lots of people recommended React, so I gave it a try. At first, it seemed completely foreign. _What exactly is state? How is it different from props? Why are there class **and** functional components? Why are we here?_ But eventually it started to fall into place.
+
+If you're unfamiliar with React, here's a quick breakdown. The building blocks of React are called components. These components can have child components. These child components "inherit" certain properties from their "parent" components. These inherited items are called either state or props (the distinction isn't important to understand at a high-level). Let's say a parent component has a state called "display" and it's set to true. That means the component will display. A function within this component might set "display" to false. If that's the case, the component will stop displaying. And, if this component passes display down to its child components, they will follow its lead, so none of them will display, either. This isn't a precise metaphor, but it's gets the picture across, I hope.
+
+**TLDR**: React is made of components. These components have traits referred to as "state" and "props" that determine what displays and the functionality the components have. The components are nested within each other. Some can have "children" that they pass certain traits to.
 
 #### React components
-* **Components:** Components are the building blocks of React. I outline my major components below.
+Now that we've covered what React does, let's talk about what the React components in the story game do. I outline my major components below.
+
 * **App.js:** This is the most top-level component. It is the parent to five other components: HomeScreen, Join, Waitscreen, WritingPaper, and StoryRevealed. It contains state that is needed in more than one component and several functions, including functions that reset certain states upon reloads, update player and game info, or start the game.
 * **HomeScreen.js:** This is the main page of the app. From it, players can create a game. When the component mounts, it creates a game in the backend. The components has functions to update the player's name, avatar, and number of rounds for the game. This information is stored in the backend and frontend. A help button when clicked displays a modal that explains the purpose of the Story Game. If a player has recently played a game and enters this page, some state is reset.
 * **Join.js:** The host uses an invite link to get friends to join the game. When a player uses the invite link, it takes them to the Join.js page. The frontend grabs the 4-letter game code from the URL before asking the backend to see if the corresponding game exists. When the page mounts, it makes a call to the backend to make sure the game in the URL exists and hasn't yet started. If it doesn't exist or has already started, it gives an error message and prompts the user to return to the homepage. If the game exists and hasn't started, the player enters their name, selects an avatar, and joins the waiting room. Their info is stored in the backend.
