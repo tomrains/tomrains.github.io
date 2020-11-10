@@ -3,7 +3,7 @@ layout: post
 title: Front-End React Game
 subtitle: Want to test your geography skills? Kindly try my fun React App
 cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
+thumbnail-img: /assets/img/oldworldmap.png
 share-img: /assets/img/path.jpg
 tags: [books, test]
 ---
