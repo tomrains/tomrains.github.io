@@ -130,17 +130,17 @@ React has plenty of packages to help developers make the most of this JavaScript
 
 There's not too much to say about Node. It basically lets you run Javascript on your computer outside of a browser. So ... yeah. I promise I'm not just phoning it in because this is the last letter in MERN and I'm tired of writing. Here's some stuff related to Node I used, though:
 * **Npm:** I used npm to install packages and run the server. I've typed "npm run dev" more than I can count.
-* **Concurrently:** Concurrently lets you run multiple commands at the same time. When I run "npm run dev," this actually sets off two commands: one to get the frontend going, and another to get the backend going (remember earlier I said it helps to think of the frontend and backend as two separate applications - here's another case where this holds true. It takes different things to get the frontend and backend up on your local server).
+* **Concurrently:** Concurrently lets you run multiple commands at the same time. When I run "npm run dev," this actually sets off two commands: one to get the frontend going, and another to get the backend going (when planning this app, I read many times that it helps to think of the frontend and backend as two separate applications - here's a case where this is true. It takes different things to get the frontend and backend up on your local server).
 * **Nodemon:** Nodemon automatically restarts your application when you make changes. A true lifesaver.
 
 ### S
 **_(Stuff)_**
 
-Okay, there is no S in MERN, but I'm adding and S in MERN and making it MERNS because so many other technologies (STUFF!) helped me in making this app! I'll forget some, but here are my favorites:
+Okay, there is no S in MERN, but I'm adding an S in MERN and making it MERNS because so many other technologies (STUFF!) helped me in making this app! I'll forget some, but here are my favorites:
 
 * **Postman:** This gem of a program lets you test your Express routes. This is great because you don't need to have your frontend set up to test them. Just build them in the backend, and see if they work. Then you can tie them in to the frontend and test them there. I love Postman.
-* **Google:** I've read many a time that one of the top, if not THE top skill a programmer must learn, is how to Google things. I only half-believed this when I started coding, but it's so true. Almost everything is on Google. Part of me wants to believe I'm a special snowflake and my problem is unique, but that's literally never been the case. When you're stuck, head to Google. The more you Google, the better you'll get at it. 
-* **Udemy:** When I got stuck and wanted to bang my head against a wall, I went to Udemy for answers. I'm naturally extremely stingy and don't want to spend $12 on a class, even if it's 10 to 40 hours of content. But saving 10 hours of head-banging frustration in exchange for $12 is so worth it. My favorite class was on how to deploy an app to Heroku. This was truly a lifesaver. I might still be trying to figure out how to deploy without it.
+* **Google:** I've read many a time that one of the top, if not THE top skill a programmer must learn is how to Google things. I only half-believed this when I started coding, but it's so true. Almost everything is on Google. When you're stuck, head to Google. The more you Google, the better you'll get at it. 
+* **Udemy:** When I got stuck and wanted to bang my head against a wall, I went to Udemy for answers. I'm naturally extremely stingy and find it hard to spend $12 on a class, even if it's 10 to 40 hours of content. But saving 10 hours of head-banging frustration in exchange for $12 is so worth it. My favorite class was on how to deploy an app to Heroku. This was truly a lifesaver. I might still be trying to figure out how to deploy without it.
 
 ## Can you show me how to make an app?
 Yes. Just contact me via email or phone. I love helping people learning to code.
