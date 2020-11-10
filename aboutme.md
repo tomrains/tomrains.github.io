@@ -24,9 +24,7 @@ Want to know even more about me? Okay. Buckle in.
 
 I was born in 1991 in Tulsa, Oklahoma. I have 4 siblings and 2 parents. 
 
-Alright, now I'm about to get braggadocious (not a real word). In high school, I was a valedictorian and National Merit Scholar. 
-
-I studied Spanish at the University of Oklahoma. I completed my degree in 5 semesters, but my scholarship lasted for 10 semesters, so I spent 4 more semesters getting a Master's in Professional Writing.
+Alright, now I'm about to get braggadocious (not a real word). In high school, I was a valedictorian and National Merit Scholar. I studied Spanish at the University of Oklahoma. I completed my degree in 5 semesters, but my scholarship lasted for 10 semesters, so I spent 4 more semesters getting a Master's in Professional Writing.
 
 **Life in New York:** After school, I moved to New York City. I spent the first few months writing fiction and exploring the Big Apple. A few months later, I got a writing job with a company called BuildingLink. In my last year in New York, I lived in a [69-square-foot apartment](https://tomrains.me/2017/02/21/my-apartment-is-69-square-feet/) in the East Village. No, that wasn't a typo. It really was that small. Although I loved New York, after 2.5 years I decided it was time for a new adventure. I moved back to Tulsa.
 
