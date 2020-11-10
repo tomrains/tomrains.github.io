@@ -14,9 +14,7 @@ My best trivia category is geography, and I love games, so when I was putting my
 The game makes you guess which country has the larger population. The choices are randomly generated, so you get a new quiz every time. (The chances of getting the same quiz is (insert math here).
 
 ## What did you use to make the app?
-create-react-app
-look at package.json to see what i got
-atom for code editor, though now i use visual code studio
+I used Create-React-App to set up a project template for React. This is the easiest way I've found for beginners to set up a React application. I used React Bootstrap for the buttons. I love how clean React buttons looks, and I feel the simple UI mirrors the straightforward function of the game. I used Atom for my code editor, but I now use Visual Studio Code just because I like the look of it more. I deployed the app to Github Pages following documentation on Github.
 
 ## What challenges did you face making this app?
 This app forced me out of my safe vanilla JS in-browser experience and step into the wild world of React, which I had read about but didn't have experience tinkering with yet.
