@@ -22,7 +22,7 @@ Begin by writing the first 135 to 150 characters of a story. Then, you submit yo
 I wanted to build a full-stack app. I already knew and loved React, so I opted for a MERN stack app. First, I designed an overall architecture for the app. Then, I built the frontend React components. Next, I learned how Express and MongoDB and Mongoose tied into the overall picture, creating a backend. Then came much, much debugging. _**For a more in-depth explanation,**_ check out my long answer below.
 
 ## Can you give me a full, exhaustive/exhausting breakdown of the technologies you used to make the app?
-I'm so glad you asked. The answer is _yes._ If you don't want to read this, scroll down super far. There's one more question after this.
+I'm so glad you asked. The answer is _yes._ If you don't want to read this and just want my contact info, scroll down super far to the end of the page.
 
 Let's go through the letters of MERN to outline what the app can do and why.
 
@@ -30,16 +30,16 @@ Let's go through the letters of MERN to outline what the app can do and why.
 **_(MongoDB/Mongoose)_**
 
 #### What are MongoDB and Mongoose?
-MongoDB and Mongoose are backend tools. MongoDB is a backend database. Mongoose creates these things called "models," which are basically creating templates for data you'll make over and over again. 
+MongoDB and Mongoose are backend tools. MongoDB is a backend database. Mongoose creates "models," which are basically templates for data you'll use over and over again. 
 
 #### Why does this app need a backend?
-Because the Story Game involves several people communicating with each other on different devices, there needs to be a backend. The word "backend" strikes fear in the hearts of many self-taught coders, including me circa 2019. It was definitely frustrating to learn at first, and it took a lot of research to figure out, but it doesn't need to be scary. MongoDB is learnable, and Mongoose makes it even better. The hardest, most hair-pulling part for me was installing and setting up MongoDB. 
+Because the Story Game involves several people communicating with each other on different devices, there needs to be a backend to hold the necessary information. The word "backend" strikes fear in the hearts of many self-taught coders, including me circa 2019. It was definitely frustrating to learn at first, and it took a lot of research to figure out, but it doesn't need to be scary. MongoDB is learnable, and Mongoose makes it even better. The hardest, most hair-pulling part for me was installing and setting up MongoDB. Even though the installation documentation seems clear now, it befuddled me at first.
 
 #### How I used MongoDB and Mongoose
-I created 3 different models for the Story Game. Here's a breakdown of each one:
-* **Game model:** When a player makes a request for a game to be created, Mongoose sets up a game in the backend using the Game model. This includes the following information slots all ready to go: game code, number of rounds, current round, whether the game has started, list of current players, list of all player who joined (including deleted players), deleted player information, which players can be deleted, which stories have been disrupted due to players leaving, whether any players have left, which stories have been submitted for which rounds, which stories have been returned for which rounds, the texts of the stories, and whether or not the game exists (surprise, it always does). _That's a lot of information!_ Mongoose lets me choose the type of input, too, whether it be a boolean, string, array, number, etc.
+I created 3 different Mongoose models for the Story Game. Here's a breakdown of each one:
+* **Game model:** When a player makes a request for a game to be created, Mongoose sets up a game in the backend using the Game model. This includes the following information slots all ready to go: game code, number of rounds, current round, whether the game has started, list of current players, list of all player who joined (including deleted players), deleted player information, which players can be deleted, which stories have been disrupted due to players leaving, whether any players have left, which stories have been submitted for which rounds, which stories have been returned for which rounds, the texts of the stories, and whether or not the game exists (surprise, it always does). _That's a lot of information!_ Mongoose lets me choose the type of input required for each data slot, whether it be a boolean, string, array, number, etc.
 * **Player model:** The Player model I created is stored within the Game model. The player model has the player's name, avatar and player number. This is different from the player ID, which MongoDB creates automatically. The ID is helpful for confirming a player's identity, while the player number (0 for the host, 1 for the next player, 2 for the next, and so on) is useful for story passing logic.
-* **Story model:** This was originally created to store inside the Player model, until I realized it made more sense to store in the Game model. Coding is all about being flexible and moving on from an idea you had previously that doesn't make sense anymore (some might call this being agile). You might have to change tack more if you don't plan ahead before jumping into writing code. This is something I still struggle with, partially because banging out the code feels like working, and the planning doesn't (even though it is!).
+* **Story model:** I originally created this to store inside the Player model, until I realized it made more sense to store it in the Game model. Coding is all about being flexible and moving on from an idea you had previously that doesn't make sense anymore (some might call this being *agile*). You might have to change tack more if you don't plan ahead before jumping into writing code. This is something I still struggle with, partially because banging out the code feels like working, and the planning doesn't (even though it is!).
 
 Mongoose creates these useful models, and MongoDB stores all the information. This is key to allowing players to communicate with each other.
 
