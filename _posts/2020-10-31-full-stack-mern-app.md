@@ -121,7 +121,7 @@ When everyone but 1 player has submitted their story for the round, the frontend
 React has plenty of packages to help developers make the most of this JavaScript library. Here are the ones I used.
 * **Create-React-App:** I used this handy package to create a React skeleton. I recommend this to anyone new to React who wants an easy setup.
 * **React-Router-Dom:** Users easily navigate from page to page thanks to React-Router-Dom.
-* **React Developer tools:** This is an incredible tool — I don't know how I could build any React application without it. It's like Google Developer Tools, except you can inspect elements and see the actual React components, how they're nested, and their state and props. An absolute must-have for debugging and visualizing your app's structure.
+* **React Developer tools:** This is an incredible tool — I don't know how I could build any React application without it. It's like Google Developer Tools, except you can inspect elements and see the actual React components in the browser, how they're nested, and their state and props. An absolute must-have for debugging and visualizing your app's structure.
 * **React-Simple-Storage:** This simple and wonderful package maintains the state of the page when refreshing or leaving and returning. For state that I *didn't* want to maintain on a page refresh or when revisiting, I was able to use a special function in componentDidMount.
 * **Emoji-Picker-React:** I used this awesome package to let users choose an emoji to represent them. It uses React Hooks, which were fun to learn about. I had to research them a bit before being able to use this package effectively.
 * **Bootstrap React:** Bootstrap for React informed the design of forms, buttons, and modals.
@@ -130,14 +130,14 @@ React has plenty of packages to help developers make the most of this JavaScript
 **_(Node)_**
 
 There's not too much to say about Node. It basically lets you run Javascript on your computer outside of a browser. So ... yeah. I promise I'm not just phoning it in because this is the last letter in MERN and I'm tired of writing. Here's some stuff related to Node I used, though:
-* **Npm:** I used npm to install packages and run the server. I've typed "npm run dev" more than I can count.
-* **Concurrently:** Concurrently lets you run multiple commands at the same time. When I run "npm run dev," this actually sets off two commands: one to get the frontend going, and another to get the backend going (when planning this app, I read many times that it helps to think of the frontend and backend as two separate applications - here's a case where this is true. It takes different things to get the frontend and backend up on your local server).
+* **Npm:** I used npm to install packages and run the server. I've typed "npm run dev" more times than I can count.
+* **Concurrently:** Concurrently lets you run multiple commands at the same time. When I run "npm run dev," this actually sets off two commands: one to get the frontend going, and another to get the backend going (when planning this app, I read many times that it helps to think of the frontend and backend as two separate applications - here's a case where this is true. It takes different things to get the frontend and backend up and running on your local server).
 * **Nodemon:** Nodemon automatically restarts your application when you make changes. A true lifesaver.
 
 ### S
 **_(Stuff)_**
 
-Okay, there is no S in MERN, but I'm adding an S in MERN and making it MERNS because so many other technologies (STUFF!) helped me in making this app! I'll forget some, but here are my favorites:
+Okay, there is no S in MERN, but I'm adding an S in MERN and making it MERNS because so many other technologies (STUFF!) helped me in making this app. I'll forget some, but here are my favorites:
 
 * **Postman:** This gem of a program lets you test your Express routes. This is great because you don't need to have your frontend set up to test them. Just build them in the backend, and see if they work. Then you can tie them in to the frontend and test them there. I love Postman.
 * **Google:** I've read many a time that one of the top, if not THE top skill a programmer must learn is how to Google things. I only half-believed this when I started coding, but it's so true. Almost everything is on Google. When you're stuck, head to Google. The more you Google, the better you'll get at it. 
