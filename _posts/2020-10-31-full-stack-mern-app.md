@@ -8,18 +8,18 @@ comments: true
 ## So what is this app, anyway?
 My <a href="https://secret-wildwood-99621.herokuapp.com/" target="_blank">full-stack MERN app</a> is based on an old-school pen and paper activity called the Story Game. This digital version lets you:  
 * Create outrageous, hilarious stories with friends
-* Play remotely or together (with your faces in your smartphones).  
+* Play remotely or in-person (with your faces in your smartphones).  
 
 Grab at least one friend to help you test the app. To learn more about how I built the app, read on.
 
 ## How did you get the idea for this app?
-I've always loved the pen and paper version of the Story Game. It often has me crying with laughter at the Kafkaesque stories that come out of it. The pen and paper version has its drawbacks, though. Some people don't really like writing with pen and paper, other people have difficult-to-read handwriting, and sometimes no one has pen and paper on them. For these reasons, I decided to make an app version of the game, especially since I knew it would require a backend. I had no idea how to set up a backend but was willing to figure it out.
+I've always loved the pen and paper version of the Story Game. It often has me crying with laughter at the Kafkaesque stories that come out of it. The pen and paper version has its drawbacks, though. Some people don't really like writing with pen and paper, others have difficult-to-read handwriting, and sometimes no one has pen and paper on them. For these reasons, I decided to make an app version of the game, especially since I knew it would require a backend. I had no idea how to set up a backend, but I was willing to figure it out.
 
 ## What are the rules of the game?
 Begin by writing the first 135 to 150 characters of a story. Then, you submit your story. Once all players have submitted, you'll receive a story someone else has written, but you'll only be able to see the last few words they wrote. Continue the thread of the story based on this small amount of context. Once you've submitted for the last round, you receive a story co-written by several players. Hopefully, it makes you and everyone else laugh.
 
 ## How did you make the app?
-I wanted to build a full-stack app. I already knew and loved React, so I opted for a MERN stack app. First, I designed an overall architecture for the app. Then, I built the frontend React components. Next, I learned how Express and MongoDB and Mongoose tied in to the overall picture, creating a backend. Then came much, much debugging. _**For a more in-depth explanation,**_ check out my long answer below.
+I wanted to build a full-stack app. I already knew and loved React, so I opted for a MERN stack app. First, I designed an overall architecture for the app. Then, I built the frontend React components. Next, I learned how Express and MongoDB and Mongoose tied into the overall picture, creating a backend. Then came much, much debugging. _**For a more in-depth explanation,**_ check out my long answer below.
 
 ## Can you give me a full, exhaustive/exhausting breakdown of the technologies you used to make the app?
 I'm so glad you asked. The answer is _yes._ If you don't want to read this, scroll down super far. There's one more question after this.
