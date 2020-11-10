@@ -22,7 +22,7 @@ Begin by writing the first 135 to 150 characters of a story. Then, you submit yo
 I wanted to build a full-stack app. I already knew and loved React, so I opted for a MERN stack app. First, I designed an overall architecture for the app. Then, I built the frontend React components. Next, I learned how Express and MongoDB and Mongoose tied into the overall picture, creating a backend. Then came much, much debugging. _**For a more in-depth explanation,**_ check out my long answer below.
 
 ## Can you give me a full, exhaustive/exhausting breakdown of the technologies you used to make the app?
-I'm so glad you asked. The answer is _yes._ If you don't want to read this and just want my contact info, scroll down super far to the end of the page.
+I'm so glad you asked. The answer is _yes._ If you don't want to read this and just want my contact info, scroll down super far to the end of the page. You can also see the code on my [Github page](https://github.com/tomrains/theStoryGame).
 
 Let's go through the letters of MERN to outline what the app can do and why.
 
