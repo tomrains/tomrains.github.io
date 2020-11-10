@@ -2,7 +2,7 @@
 layout: post
 title: Full-Stack MERN App
 subtitle: MongoDB, Express, React, and Node join forces to create a titillating party game
-cover-img: /assets/img/journalbanner.jpg
+cover-img: /assets/img/react1.jpg
 thumbnail-img: /assets/img/journal.jpg
 comments: true
 ---
