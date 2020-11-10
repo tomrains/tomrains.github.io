@@ -120,9 +120,9 @@ When everyone but 1 player has submitted their story for the round, the frontend
 React has plenty of packages to help developers make the most of this JavaScript library. Here are the ones I used.
 * **Create-React-App:** I used this handy package to create a React skeleton. I recommend this to anyone new to React who wants an easy setup.
 * **React-Router-Dom:** Users easily navigate from page to page thanks to React-Router-Dom.
-* **React Developer tools:** This is an incredible tool - I don't know how I could build any React application without it. It's like Google Developer Tools, except you can inspect elements and see the actual React componenents, how they're nested, and their state and props. Absolute must-have for debugging and visualizing your app's structure.
-* **React-Simple-Storage:** This simple and wonderful package maintains the state of the page when refreshing or leaving and returning. For state that I didn't want to maintain on a page refresh or when revisiting, I was able to use a special function in componentDidMount.
-* **Emoji-Picker-React:** I used this wonderful package to let users choose an emoji to represent them. It uses React Hooks, which were fun to learn about. I had to research them a bit before being able to use this package effectively.
+* **React Developer tools:** This is an incredible tool — I don't know how I could build any React application without it. It's like Google Developer Tools, except you can inspect elements and see the actual React components, how they're nested, and their state and props. An absolute must-have for debugging and visualizing your app's structure.
+* **React-Simple-Storage:** This simple and wonderful package maintains the state of the page when refreshing or leaving and returning. For state that I *didn't* want to maintain on a page refresh or when revisiting, I was able to use a special function in componentDidMount.
+* **Emoji-Picker-React:** I used this awesome package to let users choose an emoji to represent them. It uses React Hooks, which were fun to learn about. I had to research them a bit before being able to use this package effectively.
 * **Bootstrap React:** Bootstrap for React informed the design of forms, buttons, and modals.
 
 ### N
