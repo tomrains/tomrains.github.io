@@ -2,7 +2,7 @@
 layout: page
 title: About me
 subtitle: Who is Tom Rains, anyway?
-share-img: /assets/img/picOfTom.png
+share-img: assets/img/picOfTom.png
 ---
 
 Hi there, my name is Tom. In a past life, I wrote a ton of content. Now, I'm more into writing code. I'm familiar with the following technologies:
