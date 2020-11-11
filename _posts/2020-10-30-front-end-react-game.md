@@ -4,7 +4,7 @@ title: Front-End React Game
 subtitle: Want to test your geography skills? Kindly try my fun React App
 cover-img: /assets/img/stainedglassmap.jpg
 thumbnail-img: /assets/img/animalworldmap.jpg
-share-img: /assets/img/path.jpg
+share-img: /assets/img/stainedglassmap.jpg
 tags: [books, test]
 ---
 
