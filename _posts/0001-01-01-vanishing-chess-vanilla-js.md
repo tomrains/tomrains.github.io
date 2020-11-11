@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Vanishing Chess with Vanilla JS
 subtitle: This chessboard disentegrates as the game progresses
 cover-img: /assets/img/chessbanner.jpg
