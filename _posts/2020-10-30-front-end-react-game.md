@@ -5,7 +5,6 @@ subtitle: Want to test your geography skills? Kindly try my fun React App
 cover-img: /assets/img/stainedglassmap.jpg
 thumbnail-img: /assets/img/animalworldmap.jpg
 share-img: /assets/img/stainedglassmap.jpg
-permalink: /front-end-react-game/
 ---
 
 My best trivia category is geography, and I love games, so when I was putting my React skills to the test, I decided to make a dynamic geography quiz game. [Test it out it here](https://tomrains.github.io/populations-game/). 
