@@ -191,7 +191,7 @@ date_format: "%B %-d, %Y"
 timezone: "America/Chicago"
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/
+permalink: /:title.html
 paginate: 5
 
 kramdown:
