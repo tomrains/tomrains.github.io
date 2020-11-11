@@ -30,4 +30,4 @@ To fix this, I decided to have separate components for odd-numbered questions an
 I also had to learn how to update parent state from a child component. This was really hard to wrap my mind around. At the end of the day, you can just pass an update state function down from the parent to the child and call this function when the child needs to update state.
 
 ## Do you have a more complex app?
-Yes. My [full-stack MERN app](https://tomrains.github.io/full-stack-mern-app.html/) is the most complex project I have so far.
+Yes. My [full-stack MERN app](https://tomrains.github.io/full-stack-mern-app) is the most complex project I have so far.
