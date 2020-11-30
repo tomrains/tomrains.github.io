@@ -148,7 +148,7 @@ Okay, there is no S in MERN, but I'm adding an S in MERN and making it MERNS bec
 
 ## Can you show me how to make an app?
 Yes. Just contact me via email or phone. I love helping people learning to code.
-- **Email:** tomrainswrites@gmail.com
+- **Email:** tomrainscodes@gmail.com
 - **Phone:** (918) 933-9899
 
 ## Can I hire you?
