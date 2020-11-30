@@ -38,7 +38,7 @@ Alright, now I'm about to get braggadocious (not a real word). In high school, I
 Now I'm here, and you're also here. That's pretty cool. Can I help you solve a problem you're having? Do you want to work with me? I'd love to talk to you.
 
 I'm available via:
-- **Email:** tomrainswrites@gmail.com
+- **Email:** tomrainscodes@gmail.com
 - **Phone:** (918) 933-9899
 
 Thanks for reading. If you're looking for a job, drop me a line, and I'll help you.
